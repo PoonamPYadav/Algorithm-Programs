@@ -55,13 +55,13 @@ function decimaltoBinary()
 	var res=[];
 	res=ary2.concat(ary1);
 	console.log(res);
-	 var revers=[];
-	 revers=res.reverse();
+	 //var revers=[];
+	// revers=res.reverse();
 	
 	var bindec=[];
 
-		for(var j=0;j<res.length;j++){
-		bindec.push(revers[j]*Math.pow(2,j));
+		for(var j=res.length;j<=0;j--){
+		bindec.push(res[j]*Math.pow(2,j));
 
 		}
 		var sum=0;
